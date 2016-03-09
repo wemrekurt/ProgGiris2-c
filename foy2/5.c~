@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main (void){
+  int c;
+  c = getchar();
+  char alf[] = "abcdefghijklmnoprstuvyzwqxABCDEFGHIJKLMNOPRSTUVYZWQX";
+  while (c != EOF){
+    int i=0;
+    int found = 0;    
+    while(found == 0){
+      if(alf[i] == c){
+        if(i>52){
+          putchar(alf[i-26]);
+        }else{
+          putchar(alf[i+25]);
+        }
+	printf ("%d",i);
+	i++;
+        found = 1;
+      }      
+    }
+
+
+c = getchar();
+    
+  }
+  return 0;
+}
