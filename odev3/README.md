@@ -10,3 +10,10 @@ Konsolda Şöyle:
 
 <h3>Soru 3:<sub>Charlie</sub></h3>
 <p>Bit to Megabyte </p>
+
+<h3>Soru 4:<sub>Delta</sub></h3>
+Konsolda:
+<pre>
+  ./Delta.out 3 + 5 x 2 / 4
+</pre>
+<p>Garip bi hesap makinesi</p>
