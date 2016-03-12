@@ -5,4 +5,9 @@ Konsolda Şöyle:
 </pre>
 <i> Decode İçin : 0 , Encode İçin: 1 </i>
 <br />
-<h3>Soru 2:<sub>Beta</sub> </h3>
+<h3>Soru 2:<sub>Bravo</sub> </h3>
+<p>zor bi soru</b>
+
+<br />
+<h3>Soru 3:<sub>Charlie</sub></h3>
+
