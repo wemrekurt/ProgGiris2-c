@@ -8,6 +8,5 @@ Konsolda Şöyle:
 <h3>Soru 2:<sub>Bravo</sub> </h3>
 <p>zor bi soru</b>
 
-<br />
 <h3>Soru 3:<sub>Charlie</sub></h3>
-
+<p>Bit to Megabyte </p>
