@@ -3,48 +3,47 @@
 #include <string.h>
 #include <ctype.h>
 
+char *strrev(char *str){
+    char c, *front, *back;
 
-int palindrom (int ch){
-	//char vud[10] = *ptr;
-	/*int n, reverse = 0;
-	n = ch;
-	
-
-	while (ch != 0){
-      reverse = reverse * 10;
-      reverse = reverse + ch%10;
-      ch       = ch/10;
-   }
-   
-   //printf("ch = %d \n",n);
-   //printf("rvs = %d \n",reverse);
-   /*if(n == reverse){
-   	printf("palindrome: %c",n);
-   }*/
-  
-   return 0;
+    if(!str || !*str)
+        return str;
+    for(front=str,back=str+strlen(str)-1;front < back;front++,back--){
+        c=*front;*front=*back;*back=c;
+    }
+    return str;
 }
 
+int palindrome(char word[]){
+	char wordtwo[25];
+	strcpy(wordtwo,word);
+  strrev(wordtwo);
+	if(strcmp(word,wordtwo) == 0)
+		return 1;
+//		printf("palindrome");
+	else
+		return 0;
+//		printf("no");
+}
 
-int main(int argc, char *argv[]){
-  int ch, word = 0;
-  int ts[100];
-  FILE *file = fopen(argv[1], "r");  
-   
-while ( (ch = fgetc(file)) != EOF ){
-	if ( isspace(ch) || ispunct(ch) ){
-		if ( word ){
-			palindrom(ts);
-			word = 0;
-			//putchar('\n');
+int main(){
+	char c,my[25];
+	int i=0,count=0;
+
+	c= getchar();
+	while (c != EOF){
+		if(isspace(c)){
+			i = 0;
+			count = count + palindrome(my);
+			memset(&my[0], 0, sizeof(my));
+		}else{
+		  my[i] = c;
+		  i = i+1;
 		}
-	}else{
-		word = word + 1;
-		ts[word] = ch;
+		c = getchar();
 	}
-	
-}	
-  fclose(file);
 
-  return 0;
+	printf("Toplam %d palindrom kelime var. \n",count);
+
+	return 0;
 }
