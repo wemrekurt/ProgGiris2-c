@@ -1,0 +1,4 @@
+   
+    
+ 523   +23 / 
+Toplam Buyuk: 12 , Kucuk: 45 , Sayi: 5 , Diger: 15 

@@ -1,0 +1,3 @@
+bu Bir Ttsest asorusudur
+ayricaSayar KI buyUK VAR MI
+ha 523 tane ise +23 / krom

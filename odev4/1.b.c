@@ -7,21 +7,20 @@ double rastgele_ondalikli(){
   return sayi / (RAND_MAX + 1);
 }
 
-int geometrik_rastgele_deger (double p){
+double geometrik_rastgele_deger (double p){
   double q;
   int n = 0;
 
   while(q >= p){
     q = rastgele_ondalikli();
     n++;
-    printf("%d\n",n);
   }
 
-  return n;
+  return q;
 
 }
 
 int main(void){
-  int test =  geometrik_rastgele_deger(16.52);
+  double test =  geometrik_rastgele_deger(-0.1);
   printf("Test: %f \n",test);
 }
