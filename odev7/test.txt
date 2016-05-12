@@ -1,0 +1,3 @@
+#p Yeni bir paragraf. #h1 h1 etiketi ile oluşturulan başlık. #b Kalın yazı.
+#y Burası yorum satırı. #c Sayfaya ortalanmış yazı.
+#h2 h2 ile başlık gelir. #k Small etiketi için ideal. #b bir kalın daha.
